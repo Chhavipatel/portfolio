@@ -1,6 +1,6 @@
 @import 'utilities.css';
 :root{
-    --primary:#3DCFD3;
+    --primary:lightcoral;
     --dark:#161616;
     --pure:#FFFFFF;
     --ternary:#898989;
@@ -29,6 +29,9 @@ header{
     max-width:1152px;
     padding:0 15px;
     margin:0 auto;
+}
+.custom-input{
+    border: 3px solid black;
 }
 
 @media (min-width: 576px) {
@@ -98,6 +101,11 @@ header nav .branding{
 .hero .right h1 span{
     color:var(--primary);
 }
+.custom-a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
 .hero .right p{
     line-height:1.9;
     margin-bottom:2rem;
@@ -110,7 +118,8 @@ section{
     padding:6rem 0;
 }
 section.about .about-me-img{
-    height:450px;
+    height:500px;
+
 }
 section.about h1{
     margin-bottom: 1rem;
@@ -319,7 +328,7 @@ section.work .card-wrapper .card .overlay{
     left:0;
     width:100%;
     height:100%;
-    background:rgba(61, 207, 211,0.9);
+    background:rgba(93, 99, 99, 0.9);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -343,6 +352,11 @@ section.work .card-wrapper .card .overlay a{
 section.work .card-wrapper .card img{
     height:100%;
     width:100%;
+}
+.custom-card{
+    background-color: rgb(52, 52, 46);
+    padding: 20px;
+    border-radius: 4px;
 }
 
 section.blog{
@@ -631,4 +645,169 @@ footer .copyright{
     section.contact .input-wrap{
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+
+/* .container{
+	width: 100%;
+	padding: 35px 10%;
+}
+.container{
+	padding-right: calc(10% - 30px);
+} 
+ main.row{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20px;
+} */
+.col header.title{
+	font-family: helvetica;
+	color: lightcoral;
+	padding: 0px 0px 20px 30px;
+    text-align: center;
+    padding-top: 15px;
+}
+.col .contents{
+	padding: 0px 30px;
+	border-left: 2px solid #bababa;
+    margin-top: 10px;
+}
+.col .contents .box{
+	position: relative;
+	padding: 20px;
+	border: 1px solid #eaeaea;
+	background-color: #ffffff;
+	cursor: pointer;
+	transition: all 0.4s;
+	margin-bottom: 20px;
+}
+.col .contents .box:hover{
+	box-shadow: 0px 3px 12px 0px #ccc;
+	border: 1px solid transparent;
+}
+.col .contents .box::before{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	right: calc(100% + 22px);
+	top: 0;
+	background-color: lightcoral;
+	border: 2px solid white;
+}
+.box h4{
+	position: relative;
+	color:lightcoral;
+}
+.box h3{
+	font-size: 19px;
+	padding: 10px 0px 6px;
+	font-family: helvetica;
+	color: #444;
+}
+.box p{
+	line-height: 1.2;
+	color: #666;
+	font-size: 17px;
+}
+@media(max-width: 768px){
+	main.row{
+		grid-template-columns: 1fr;
+	}
+	.row .col:nth-child(2){
+		margin-top: 30px;
+	}
+}
+
+/*****SKILL SECTION*****/
+.main-section{
+   margin-bottom: 50px;
+   background-color:rgb(242, 223, 199);
+   padding: 20px;
+}
+.width-50{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skill {
+	margin-top: 30px;
+	font-size: 17px;
+    width: 48%; /* Adjust this value to leave space for margins and paddings */
+    box-sizing: border-box;
+   
+}
+
+.skill span {
+	float: right;
+}
+
+.skill div {
+	width: 100%;
+	float: left;
+	margin-top: 5px;
+	background: #e7e7e7;
+   
+	border-radius: 10px;
+}
+
+.skill div span {
+	background: lightcoral;
+	height: 5px;
+	float: left;
+}
+.heading-text{
+    background: black;
+    color: lightcoral;
+    text-align: center;
+    padding: 6px;
+    
+}
+
+div[role="progressbar"] {
+	color: lightcoral;
+	margin-left: 100px;
+	margin-bottom: 20px;
+	width: 100px;
+	;
+	height: 100px;
+	;
+	border-radius: 50%;
+
+	place-items: center;
+	display: grid;
+
+	--pgPercentage: var(--value);
+	background: radial-gradient(closest-side, black 80%, transparent 0 99.9%, black 0),
+		conic-gradient(#ffbf35 calc(var(--pgPercentage) * 1%), #ffe6af 0);
+
+}
+/*internship SECTION*/
+.service-list {
+	padding: 40px;
+	margin-top: 35px;
+	background: black;
+	border-radius: 15px;
+	width: 94%;
+	float: left;
+    color: lightcoral;
+}
+
+.service-list i {
+	font-size: 50px;
+	color:lightcoral;
+	width: 70px;
+	float: left;
+}
+
+.service-list h3 {
+	font-size: 20px;
+	margin-top: 8px;
+	margin-bottom: 15px;
+}
+
+.service-list p {
+	font-size: 15px;
+	line-height: 25px;
 }
